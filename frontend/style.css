@@ -1,0 +1,40 @@
+/* DESIGN (CSS) */
+/* 1. ONDE VAI O ESTILO (CSS) */
+       body { 
+            display: flex; justify-content: center; align-items: center; 
+            height: 100vh; margin: 0; background-color: #1a1a1a; /* Fundo ligeiramente mais claro */
+            font-family: 'Segoe UI', system-ui, sans-serif; /* Fonte padrão do Windows */
+        }
+
+        .calculadora {
+            width: 380px; /* Um pouco mais larga */
+            /* DEGRADÊ SUTIL NO FUNDO DA CALCULADORA */
+            background: linear-gradient(180deg, #2b2b2b 0%, #202020 100%);
+            padding: 25px;
+            border-radius: 20px; /* Bordas arredondadas suaves */
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* Sombra suave */
+            border: 1px solid rgba(255,255,255,0.05); /* Borda muito fina e sutil */
+        }
+
+        #visor {
+            width: 100%; height: 90px; background: transparent; color: white;
+            border: none; text-align: right; padding: 15px; font-size: 3.5rem;
+            margin-bottom: 20px; box-sizing: border-box;
+            font-weight: 300; /* Fonte mais fina no visor */
+        }
+
+        .corpo-calculadora {
+            display: flex; gap: 12px;
+        }
+
+        .grade-numeros {
+            display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; flex: 3;
+        }
+
+        .grade-operacoes {
+            display: flex; flex-direction: column; gap: 10px; flex: 1;
+        }
+
+        /* ESTILO PADRÃO DOS BOTÕES COM DEGRADÊS SUTIS */
+        button {
+            height: 70px; border-radius: 12px; /* Cantos menos
